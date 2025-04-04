@@ -1,0 +1,57 @@
+/* Estilos generales */
+body {
+    font-family: "Arial", sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Botones */
+.boton-pedido {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 15px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+.boton-hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de clic */
+.boton-clic {
+    transform: scale(0.95);
+}
+
+/* Efecto de desvanecimiento al cambiar de página */
+.fade-out {
+    opacity: 0;
+}
+
+#btnCerrarSesion {
+    background-color: #e63946 !important; /* Rojo intermedio */
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#btnCerrarSesion:hover {
+    background-color: #c62839 !important; /* Rojo más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#btnCerrarSesion:active {
+    transform: scale(0.95);
+}

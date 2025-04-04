@@ -1,0 +1,74 @@
+[
+    {
+        "dia": "Monday",
+        "fecha": "31/03/2025",
+        "hora": "20:14",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 10,
+        "precio": 20.0,
+        "total": 200.0
+    },
+    {
+        "dia": "Tuesday",
+        "fecha": "01/04/2025",
+        "hora": "09:55",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 10,
+        "precio": 20.0,
+        "total": 200.0
+    },
+    {
+        "dia": "Wednesday",
+        "fecha": "02/04/2025",
+        "hora": "13:08",
+        "producto": "Dulce Diablo",
+        "cantidad": 5,
+        "precio": 12.0,
+        "total": 60.0
+    },
+    {
+        "dia": "Wednesday",
+        "fecha": "02/04/2025",
+        "hora": "13:24",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 5,
+        "precio": 20.0,
+        "total": 100.0
+    },
+    {
+        "dia": "Wednesday",
+        "fecha": "02/04/2025",
+        "hora": "13:24",
+        "producto": "Dulce Diablo",
+        "cantidad": 2,
+        "precio": 12.0,
+        "total": 24.0
+    },
+    {
+        "dia": "Wednesday",
+        "fecha": "02/04/2025",
+        "hora": "15:13",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 15,
+        "precio": 20.0,
+        "total": 300.0
+    },
+    {
+        "dia": "Wednesday",
+        "fecha": "02/04/2025",
+        "hora": "15:13",
+        "producto": "Dulce Diablo",
+        "cantidad": 3,
+        "precio": 12.0,
+        "total": 36.0
+    },
+    {
+        "dia": "Wednesday",
+        "fecha": "02/04/2025",
+        "hora": "18:07",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 15,
+        "precio": 20.0,
+        "total": 300.0
+    }
+]

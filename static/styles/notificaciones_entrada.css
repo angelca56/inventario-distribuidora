@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Contenedor de filtros */
+.filtros {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilos para el filtro de tiempo */
+#filtroTiempo {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+/* Botón de eliminación de notificaciones */
+#btnEliminar {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#btnEliminar:hover {
+    background: #c82333;
+    transform: scale(1.05);
+}
+
+#btnEliminar:active {
+    transform: scale(0.95);
+}
+
+/* Estilos de la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Botón de volver */
+.boton-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.boton-volver:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.boton-volver:active {
+    transform: scale(0.95);
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+#btnRegresarPanel {
+    background-color: #17a2b8 !important; /* Color de btn-info de Bootstrap */
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#btnRegresarPanel:hover {
+    background-color: #138496 !important; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#btnRegresarPanel:active {
+    transform: scale(0.95);
+}
+
+#btnCerrarSesion {
+    background-color: #e63946 !important; /* Rojo intermedio */
+    color: white !important;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+#btnCerrarSesion:hover {
+    background-color: #c62839 !important; /* Rojo más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+#btnCerrarSesion:active {
+    transform: scale(0.95);
+}

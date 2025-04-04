@@ -1,0 +1,34 @@
+[
+    {
+        "fecha": "Wednesday 02/04/2025 14:27",
+        "codigo": "001",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 9,
+        "precio": 20.0,
+        "total": 180.0
+    },
+    {
+        "fecha": "Wednesday 02/04/2025 14:27",
+        "codigo": "002",
+        "producto": "Dulce Diablo",
+        "cantidad": 3,
+        "precio": 12.0,
+        "total": 36.0
+    },
+    {
+        "fecha": "Wednesday 02/04/2025 15:12",
+        "codigo": "002",
+        "producto": "Dulce Diablo",
+        "cantidad": 13,
+        "precio": 12.0,
+        "total": 156.0
+    },
+    {
+        "fecha": "Wednesday 02/04/2025 15:12",
+        "codigo": "001",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 6,
+        "precio": 20.0,
+        "total": 120.0
+    }
+]

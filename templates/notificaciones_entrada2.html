@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entradas de Productos</title>
+    <link rel="stylesheet" href="/static/styles/notificaciones_entrada2.css">
+</head>
+<body>
+
+    <h1>Entradas realizadas por el vendedor 2 🚚</h1>
+    <p>Registro de Entradas realizadas por Héctor</p>
+
+    <!-- Botón cerrar sesión -->
+    <div>
+        <button id="btnCerrarSesion" class="btn btn-danger">🚪 Cerrar Sesión</button>
+    </div>
+
+    <div class="botones-nav">
+        <button id="btnRegresarPanel" class="btn btn-info my-3">🔙 Regresar al Panel</button>
+        <a href="/notificaciones2" class="boton-volver">Volver</a>
+    </div>    
+
+    <div class="filtros">
+        <select id="filtroTiempo">
+            <option value="1">Hace 1 día</option>
+            <option value="7">Hace 1 semana</option>
+            <option value="30">Hace 1 mes</option>
+            <option value="todas">Todas</option>
+        </select>
+        <button id="btnEliminar">Eliminar Notificaciones</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Código</th>
+                <th>Nombre del Producto</th>
+                <th>Categoría</th>
+                <th>Cantidad (Unidades)</th>
+                <th>Precio</th>
+                <th>Valor Final (Q)</th>
+            </tr>
+        </thead>
+        <tbody id="tablaEntradas">
+            <!-- Los datos se insertarán aquí dinámicamente -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8" style="text-align: right;"><strong>Total General:</strong></td>
+                <td id="totalGeneral">Q0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="/static/js/notificaciones_entrada2.js"></script>
+</body>
+</html>

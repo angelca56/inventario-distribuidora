@@ -1,0 +1,30 @@
+{% extends "base_carro.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/agregar_producto_carro2.css') }}">
+{% endblock %}
+
+{% block content %}
+<h1>➕ Agregar Producto al Carro</h1>
+
+<form id="form-agregar-carro">
+    <label for="codigo">Código del Producto:</label>
+    <input type="text" id="codigo" required>
+
+    <label for="nombre">Nombre del Producto:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="categoria">Categoría:</label>
+    <input type="text" id="categoria" required>
+
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" required>
+
+    <label for="precio">Precio de Venta:</label>
+    <input type="number" step="0.01" id="precio" required>
+
+    <button type="submit" id="btnGuardarCarro" class="btn btn-success">Guardar Producto</button>
+</form>
+
+<script src="{{ url_for('static', filename='js/agregar_producto_carro2.js') }}"></script>
+{% endblock %}

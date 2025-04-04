@@ -1,0 +1,45 @@
+/* Estilos generales */
+body {
+    font-family: "Arial", sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    margin: 15px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(45deg, #007bff, #6610f2);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+.btn:hover, .boton-notificacion:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto de clic */
+.btn:active, .boton-notificacion:active {
+    transform: scale(0.95);
+}
+
+/* Efecto de desvanecimiento al cambiar de página */
+.fade-out {
+    opacity: 0;
+}

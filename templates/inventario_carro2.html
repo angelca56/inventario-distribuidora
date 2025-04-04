@@ -1,0 +1,88 @@
+{% extends "base_carro.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <script>
+            window.usuarioRol = "{{ rol }}";  // Pasamos el rol del usuario
+        </script>        
+        <!-- Buscador: por nombre o código -->
+        <div class="me-2">
+            <input type="text" id="filtroBusqueda" class="form-control w-100" placeholder="🔍 Buscar por nombre o código">
+        </div>
+
+        <!-- Dropdown para filtrar por categoría -->
+        <div class="me-2">
+            <select id="filtroCategoria" class="form-select w-100">
+                <option value="">📂 Todas las categorías</option>
+                <option value="Galletas">🍪 Galletas</option>
+                <option value="Dulces">🍬 Dulces</option>
+            </select>
+        </div>
+
+        <!-- Botones de ordenación -->
+        <div class="me-2">
+            <button id="ordenarCantidad" class="btn btn-outline-primary">📦 Ordenar por Cantidad</button>
+            <button id="ordenarCosto" class="btn btn-outline-success">💰 Ordenar por Costo</button>
+        </div>
+
+        <!-- Botón cerrar sesión -->
+        <div>
+            <button id="btnCerrarSesion" class="btn btn-danger">🚪 Cerrar Sesión</button>
+        </div>
+    </div>
+
+    <h2 class="text-center">🚚 Inventario del Carro</h2>
+    <h2 class="text-center">Héctor</h2>
+
+    {% if rol == 'admin' or rol == 'supervisor' or rol == 'vendedor2' %}
+    <!-- Todos pueden registrar ventas y entradas -->
+    <button id="btnRegistrarVenta" class="btn btn-warning my-3">🛒 Registrar Venta</button>
+    <button id="btnRegistrarEntrada" class="btn btn-warning my-3">📥 Registrar Entrada</button>
+    {% endif %}
+
+    <!-- Botones de navegación -->
+    <div class="botones-nav">
+        <button id="btnRegresarPanel" class="btn btn-info my-3">🔙 Regresar al Panel</button>
+        {% if rol == 'admin' or rol == 'supervisor' %}
+        <a href="/ver_inventarios_carros" class="boton-volver">Volver</a>
+        {% endif %}
+    </div> 
+    
+    {% if rol == 'admin' or rol == 'supervisor' %}
+    <!-- Solo Admin y Supervisor pueden agregar productos -->
+    <button id="btnAgregarProducto" class="btn btn-success my-3">➕ Agregar Producto</button>
+    {% endif %}
+
+    <!-- Tabla del inventario del vendedor -->
+    <table class="table table-bordered table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Código</th>
+                <th>Nombre del Producto</th>
+                <th>Categoría</th>
+                <th>Cantidad</th>
+                <th>Precio</th>
+                <th>Valor Final</th>
+                {% if rol == 'admin' or rol == 'supervisor' %}
+                    <th>Acciones</th> <!-- Solo Admin y Supervisor pueden ver esta columna -->
+                {% endif %}
+            </tr>
+        </thead>
+        <tbody id="tablaInventarioCarro">
+            <!-- Se llenará dinámicamente con JavaScript -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="text-align: right;"><strong>Total General:</strong></td>
+                <td id="totalGeneralCarro2">Q0.00</td> <!-- Aquí se actualizará el total general -->
+                <td></td> <!-- Columna vacía para alineación -->
+            </tr>
+        </tfoot>        
+    </table>
+</div>
+
+<!-- Cargar el JS -->
+<script src="{{ url_for('static', filename='js/inventario_carro2.js') }}" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

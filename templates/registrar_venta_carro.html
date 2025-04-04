@@ -1,0 +1,25 @@
+{% extends "base_carro.html" %}
+
+{% block head %}
+    <!-- Incluir el CSS específico para la página de registrar venta -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registrar_venta_carro.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Registrar Venta</h2>
+    <form id="formRegistrarVenta">
+        <div class="form-group">
+            <label for="codigo">Código del Producto:</label>
+            <input type="text" id="codigo" name="codigo" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="cantidad">Cantidad Vendida:</label>
+            <input type="number" id="cantidad" name="cantidad" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar Venta</button>
+    </form>
+</div>
+
+<script src="{{ url_for('static', filename='scripts/registrar_venta_carro.js') }}"></script>
+{% endblock %}

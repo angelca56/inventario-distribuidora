@@ -1,0 +1,20 @@
+[
+    {
+        "fecha": "Wednesday 02/04/2025 14:27",
+        "codigo": "001",
+        "producto": "Galleta chocolatada vanilla",
+        "cantidad": 15
+    },
+    {
+        "fecha": "Wednesday 02/04/2025 14:27",
+        "codigo": "002",
+        "producto": "Dulce Diablo",
+        "cantidad": 8
+    },
+    {
+        "fecha": "Wednesday 02/04/2025 14:40",
+        "codigo": "002",
+        "producto": "Dulce Diablo",
+        "cantidad": 8
+    }
+]

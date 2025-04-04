@@ -1,0 +1,16 @@
+[
+    {
+        "codigo": "001",
+        "nombre": "Galleta chocolatada vanilla",
+        "categoria": "Galletas",
+        "cantidad": 50,
+        "precio": 20.0
+    },
+    {
+        "codigo": "002",
+        "nombre": "Dulce Diablo",
+        "categoria": "Galletas",
+        "cantidad": 12,
+        "precio": 12.0
+    }
+]
