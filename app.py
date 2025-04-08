@@ -1,8 +1,10 @@
 from flask import Flask, render_template, request, jsonify, session, redirect, url_for
 from werkzeug.security import generate_password_hash, check_password_hash  # 🔐 Para encriptar contraseñas
-import json
-import os
 from datetime import datetime, timedelta
+import json
+from dotenv import load_dotenv
+import os
+
 
 # 📌 Ruta del archivo JSON inventario mayor
 INVENTARIO_FILE = os.path.join("json", "inventario_mayor.json")
@@ -171,9 +173,11 @@ def guardar_ventas_vendedor2(ventas):
     with open(VENTAS_VENDEDOR2_FILE, "w") as f:
         json.dump(ventas, f, indent=4)
 
+load_dotenv()
+
 def crear_app():
     app = Flask(__name__)
-    app.secret_key = "clave_super_secreta"
+    app.secret_key = os.getenv("SECRET_KEY", "clave_super_secreta")
 
     # 📌 Ruta para mostrar la página de inicio de sesión
     @app.route("/")
